@@ -77,6 +77,14 @@ body {
   height: 40px;
   margin: 0 auto;
   display: flex;
+  outline: transparent;
+  border: 2px solid #808080;
+  border-radius: 4px;
+  padding-left: 16px;
+}
+#name-input:hover,
+#name-input:focus {
+  border: 2px solid rgb(51, 41, 41);
 }
 h1 {
   font: 600 24px / 1.33333 "Montserrat", sans-serif;
@@ -95,7 +103,6 @@ h1 {
   font: 400 16px / 1.5 "Montserrat", sans-serif;
   letter-spacing: 0.04em;
   color: #2e2f42;
-  padding-left: 8px;
 }
 
 /*!task-4 */
@@ -121,6 +128,7 @@ h1 {
   letter-spacing: 0.04em;
   color: #2e2f42;
   padding-left: 12px;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 .login-form input:hover {
   border-color: #212121;
@@ -148,7 +156,43 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
+  transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .login-form button:hover {
+  background: #6c8cff;
+}
+/* !task-5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  width: 360px;
+  margin: 0 auto;
+  align-items: center;
+}
+.widget p {
+  font: 400 16px / 1.5 "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.widget button {
+  background: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 500 16px / 1.5 "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.widget button:hover {
   background: #6c8cff;
 }
